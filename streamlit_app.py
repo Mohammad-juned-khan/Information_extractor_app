@@ -10,8 +10,9 @@ from dotenv import load_dotenv
 
 
 
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# os.getenv("GOOGLE_API_KEY")
+# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key='AIzaSyAku0AUb-InsJlac_4HXxgAoDbyIQ9J0dM')
 
 ## Function to load OpenAI model and get respones
 
