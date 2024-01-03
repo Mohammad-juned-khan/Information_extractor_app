@@ -6,8 +6,12 @@ import pathlib
 import textwrap
 from PIL import Image
 import google.generativeai as genai
+from dotenv import load_dotenv
 
-genai.configure(api_key='AIzaSyAku0AUb-InsJlac_4HXxgAoDbyIQ9J0dM')
+
+
+os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 ## Function to load OpenAI model and get respones
 
